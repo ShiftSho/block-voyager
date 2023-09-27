@@ -1,0 +1,41 @@
+.transaction-container {
+    padding: 16px;
+    margin-top: 16px;
+    animation: fadeIn 1s;
+  }
+  
+  .transaction-title {
+    margin-bottom: 16px;
+  }
+  
+  .transaction-card {
+    animation: slideIn 0.5s ease-in-out;
+  }
+
+  .transaction-detail.even {
+    background-color: #f7f7f7; /* Light gray for even rows */
+  }
+
+  .transaction-detail.odd {
+    background-color: #e0e0e0; /* Slightly darker gray for odd rows */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
